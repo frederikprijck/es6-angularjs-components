@@ -1,0 +1,12 @@
+# OS
+.DS_STORE/
+
+# IDE
+.idea/
+.vscode/
+
+# Package managers
+node_modules/
+
+# Build
+dist/
