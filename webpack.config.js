@@ -14,10 +14,15 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                use: {
-                    loader: 'babel-loader',
-                    options: { presets: ['es2015'] }
-                }
+                use: [
+                    {
+                        loader: 'ng-annotate-loader'
+                    },
+                    {
+                        loader: 'babel-loader',
+                        options: { presets: ['es2015'] }
+                    }
+                ]
             },
             {
                 test: /\.css$/,
