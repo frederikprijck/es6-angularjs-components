@@ -6,8 +6,14 @@ export default class CategoriesController {
     }
 
     $onInit() {
+        console.log('Adding the navigation to the DOM...');
+
         this.CategoriesModel.getCategories()
             .then(result => this.categories = result);
+    }
+
+    $onDestroy() {
+        console.log('Removing the navigation from the DOM...');
     }
 
     onCategorySelected(category) {

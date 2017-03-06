@@ -6,8 +6,8 @@ export default class CategoriesModel {
         this.categories = [
             { id: 0, name: 'Development' },
             { id: 1, name: 'Design' },
-            { id: 2, name: 'Technology' },
-            { id: 3, name: 'Motorcycles' }
+            { id: 2, name: 'Excercise' },
+            { id: 3, name: 'Humor' }
         ];
     }
 
