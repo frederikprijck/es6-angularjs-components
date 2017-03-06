@@ -17,6 +17,13 @@ export default class CategoriesController {
     }
 
     onCategorySelected(category) {
-        console.log(`Selected: ${category.name}`);
+        this.CategoriesModel.setCurrentCategory(category);
+    }
+
+    isCurrentCategory(category) {
+        return this.CategoriesModel.getCurrentCategory() &&
+            this.CategoriesModel.getCurrentCategory().id === category.id;
+
+        console.log(category);
     }
 }
