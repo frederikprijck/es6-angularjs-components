@@ -1,9 +1,9 @@
 import angular from 'angular';
 import CategoriesComponent from './categories/categories.component';
-import CategoryItem from './categories/category-item/category-item.component';
+import CategoryItemComponent from './categories/category-item/category-item.component';
 
 const ComponentsModule = angular.module('ComponentsModule', [])
     .component('categories', CategoriesComponent)
-    .component('categoryItem', CategoryItem);
+    .component('categoryItem', CategoryItemComponent);
 
 export default ComponentsModule;
